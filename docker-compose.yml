@@ -1,0 +1,23 @@
+services:
+  postgres: 
+    image: postgres:15
+    container_name: postgres.builder
+    environment: 
+      POSTGRES_USER:   admin
+      POSTGRES_PASSWORD:   admin
+      POSTGRES_DB:   mydb
+    ports:
+      - 5433:5433
+    volumes:
+      - postgres.builder:/var/lib/postresql/data
+
+volumes: 
+  postgres.builder:
+
+
+
+
+
+
+  
+  
